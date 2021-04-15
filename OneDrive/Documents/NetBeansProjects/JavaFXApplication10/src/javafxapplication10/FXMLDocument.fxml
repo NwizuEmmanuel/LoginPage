@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication10.FXMLDocumentController">
+   <children>
+      <VBox layoutX="88.0" layoutY="33.0" prefHeight="548.0" prefWidth="447.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="resultScr" editable="false" focusColor="#e7e7e7" prefColumnCount="10" prefHeight="107.0" prefWidth="311.0" promptText="0" style="-fx-background-color: #F2F2F2;" unFocusColor="#fffefe">
+               <font>
+                  <Font size="65.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXTextField>
+            <GridPane hgap="7.0" prefHeight="263.0" prefWidth="311.0" vgap="7.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXButton fx:id="nine" buttonType="RAISED" onAction="#handleButtonActionNine" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="9" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="eight" buttonType="RAISED" layoutX="15.0" layoutY="15.0" onAction="#handleButtonActionEight" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="8" textFill="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="plus" buttonType="RAISED" layoutX="142.0" layoutY="15.0" onAction="#handleButtonActionPlus" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="+" textFill="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="equalsTo" buttonType="RAISED" layoutX="142.0" layoutY="15.0" onAction="#handleButtonActionEquatTo" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="seven" buttonType="RAISED" layoutX="79.0" layoutY="15.0" onAction="#handleButtonActionSeven" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="7" textFill="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="six" buttonType="RAISED" layoutX="15.0" layoutY="15.0" onAction="#handleButtonActionSix" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="6" textFill="WHITE" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="five" buttonType="RAISED" layoutX="15.0" layoutY="15.0" onAction="#handleButtonActionFive" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="four" buttonType="RAISED" layoutX="79.0" layoutY="82.0" onAction="#handleButtonActionFour" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="4" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="three" buttonType="RAISED" layoutX="15.0" layoutY="82.0" onAction="#handleButtonActionThree" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="3" textFill="WHITE" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="two" buttonType="RAISED" layoutX="15.0" layoutY="82.0" onAction="#handleButtonActionTwo" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one" buttonType="RAISED" layoutX="15.0" layoutY="15.0" onAction="#handleButtonActionOne" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="1" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="zero" buttonType="RAISED" layoutX="15.0" layoutY="127.0" onAction="#handleButtonActionZero" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="0" textFill="WHITE" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one1111" buttonType="RAISED" layoutX="15.0" layoutY="184.0" onAction="#handleButtonActionPoint" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="." textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one1112" buttonType="RAISED" layoutX="15.0" layoutY="184.0" onAction="#handleButtonActionClear" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #DC4E41;" text="CL" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one4" buttonType="RAISED" layoutX="15.0" layoutY="13.0" onAction="#handleButtonActionMul" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="x" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one41" buttonType="RAISED" layoutX="207.0" layoutY="70.0" onAction="#handleButtonActionDiv" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="/" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one1113" buttonType="RAISED" layoutX="15.0" layoutY="225.0" onAction="#handleButtonActionSub" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one1114" buttonType="RAISED" layoutX="15.0" layoutY="225.0" onAction="#handleButtonActionSin" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="sin()" textFill="WHITE" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one11141" buttonType="RAISED" layoutX="15.0" layoutY="294.0" onAction="#handleButtonActionCos" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="cos()" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="one111411" buttonType="RAISED" layoutX="102.0" layoutY="294.0" onAction="#handleButtonActionTan" prefHeight="118.0" prefWidth="132.0" ripplerFill="#6e63e8" style="-fx-background-color: #30C7CB;" text="tan()" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
