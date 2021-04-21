@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="pane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="857.0" stylesheets="@backgroundStyler.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpage6.FXMLDocumentController">
+  <stylesheets>
+        <URL value="@backgroundStyler.css" />
+    </stylesheets>
+   <children>
+      <HBox alignment="CENTER" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="128.0">
+         <children>
+            <Pane>
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#51565b" height="490.0" opacity="0.38" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="0.0" width="557.0" />
+                  <VBox alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" VBox.vgrow="ALWAYS">
+                           <children>
+                              <JFXTabPane fx:id="tabPane" prefHeight="367.0" prefWidth="557.0" VBox.vgrow="ALWAYS">
+                                 <tabs>
+                                    <Tab text="SIGN IN">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox prefHeight="183.0" prefWidth="557.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="551.0">
+                                                         <children>
+                                                            <JFXTextField id="jfx-textfield" focusColor="#d4ff01" labelFloat="true" promptText="Email or Username" stylesheets="@backgroundStyler.css" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <JFXPasswordField id="jfx-PasswordField" focusColor="#d4ff01" labelFloat="true" promptText="Password" stylesheets="@backgroundStyler.css" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXPasswordField>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <JFXButton id="jfx-button" fx:id="signInButton" buttonType="RAISED" onAction="#signInBtn" prefHeight="40.0" prefWidth="235.0" stylesheets="@backgroundStyler.css" text="SIGN IN" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="176.0" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <JFXButton fx:id="accountCrt" onAction="#signInBtn" prefHeight="40.0" prefWidth="235.0" ripplerFill="WHITE" text="Don't have an account" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="30.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                    <Tab fx:id="signUp" text="SIGN UP">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox alignment="CENTER_LEFT" prefHeight="68.0" prefWidth="551.0">
+                                                         <children>
+                                                            <JFXTextField id="jfx-textfield" focusColor="#d4ff01" labelFloat="true" promptText="Full name" stylesheets="@backgroundStyler.css" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <VBox.margin>
+                                                            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                                                         </VBox.margin>
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="13.0" layoutY="13.0" prefHeight="68.0" prefWidth="551.0">
+                                                         <children>
+                                                            <JFXTextField id="jfx-textfield" focusColor="#d4ff01" labelFloat="true" promptText="Email" stylesheets="@backgroundStyler.css" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXTextField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="84.0" prefHeight="68.0" prefWidth="551.0">
+                                                         <children>
+                                                            <JFXPasswordField id="jfx-PasswordField" focusColor="#d4ff01" labelFloat="true" promptText="Password" stylesheets="@backgroundStyler.css" unFocusColor="WHITE" HBox.hgrow="ALWAYS">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXPasswordField>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="152.0" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <JFXCheckBox checkedColor="#9e8d8d" text="I agree to Terms and conditions" textFill="WHITE" unCheckedColor="WHITE">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXCheckBox>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" layoutX="10.0" layoutY="220.0" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                         <children>
+                                                            <JFXButton id="jfx-button" buttonType="RAISED" prefHeight="40.0" prefWidth="235.0" stylesheets="@backgroundStyler.css" text="SIGN UP" textFill="WHITE">
+                                                               <font>
+                                                                  <Font name="System Bold" size="13.0" />
+                                                               </font>
+                                                            </JFXButton>
+                                                         </children>
+                                                      </HBox>
+                                                      <HBox alignment="CENTER" prefHeight="68.0" prefWidth="551.0">
+                                                         <padding>
+                                                            <Insets bottom="3.0" left="30.0" right="30.0" top="3.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets top="30.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </Tab>
+                                 </tabs>
+                              </JFXTabPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

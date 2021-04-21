@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="loginpage6.HomePageController">
+    <stylesheets>
+        <URL value="@homepage.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="#2639b2" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Ice hub" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="57.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="backBtn" buttonType="RAISED" onAction="#backBtnListner" onDragDetected="#backBtnListner" prefHeight="37.0" prefWidth="228.0" style="-fx-background-color: green; -fx-background-radius: 20 20 20 20;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

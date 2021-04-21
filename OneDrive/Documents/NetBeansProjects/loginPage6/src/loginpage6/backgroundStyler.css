@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2021, 9:53:59 AM
+    Author     : HP
+*/
+
+#pane1{
+    -fx-background-image:  url("element5-digital-uE2T1tCFsn8-unsplash.jpg");
+    -fx-alignment: CENTER;
+/*    -fx-opacity: 0.34;*/
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+}
+
+#vbox1{
+    -fx-background-color: whitesmoke;
+    -fx-opacity: 0.70;
+    -fx-background-radius: 10 10 0 0;
+}
+
+#tabp1{
+    -fx-background-color: whitesmoke;
+    -fx-text-alignment: center;
+    -fx-tile-alignment: CENTER;
+}
+
+.jfx-tab-pane .tab-header-background { 
+    /*-fx-background-color: #4B0082*/
+ -fx-background-color:transparent;
+ -fx-alignment: center;
+ -fx-headerAlignment:center;
+}
+
+.tab{
+       /*-fx-background-color: #4B0082;*/
+/*    -fx-background-insets: 0 1 0 1,0,0;*/
+  
+   /*-fx-background-radius: 2000;*/
+   -fx-alignment: CENTER;
+    -fx-headerAlignment:center;
+}
+
+.tab .tab-label { 
+/*     -fx-border-color:   linear-gradient(from 25% 25% to 100% 100%, #CCA2F5, #CCA2F5,#DAA8DD);*/
+/*   -fx-border-radius: 2000;*/
+/*       -fx-border-width: 4;*/
+    -fx-alignment: CENTER;
+    -fx-text-fill:  #ffffff;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+#button1{
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-background-radius: 30 30 30 30;
+}
+
+#icon{
+    -fx-background-color: white;
+    -fx-fill: white;
+    -fx-translate-x: 10;
+}
+
+#jfx-textfield{
+    -fx-text-inner-color: white;
+    -fx-prompt-text-fill: white;
+}
+
+#jfx-button{
+    -fx-background-color: blueviolet;
+/*    -fx-background-size: 50px, 56px;*/
+    -fx-background-radius: 20 20 20 20;
+}
+
+#shape{
+    -fx-background-radius: 10 10 0 0;
+}
+
+#jfx-PasswordField{
+    -fx-text-inner-color: white;
+    -fx-prompt-text-fill: white;
+}
+
+#radius{
+    -fx-background-radius: 30 30 0 0;
+}
